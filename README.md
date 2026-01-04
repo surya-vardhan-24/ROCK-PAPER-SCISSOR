@@ -34,5 +34,3 @@ This project demonstrates basic DOM manipulation, event handling, and game logic
 
 ---
 
-## 📁 Project Structure
-
