@@ -11,7 +11,8 @@ buttons.forEach(element => {
         const ha = document.querySelector("#result");
         ha.textContent = res;
 
-        //random(res);
+        random(res);
+        
 
     });
 });
@@ -39,6 +40,15 @@ function playRound(user, computer) {
 }
 
 function random(res){
-    const ha = document.querySelector("#result");
-    ha.textContent = res;
+    if(res == "You win!"){
+        let haha = document.querySelector("#user-score");
+        let num = Number(haha.innerText);
+        num++;
+        haha.innerText= num;
+    }else if(res == "Computer wins!"){
+        let haha  = document.querySelector("#computer-score");
+        let num = 0;
+        num++;
+        haha.textContent = num;
+    }
 }
